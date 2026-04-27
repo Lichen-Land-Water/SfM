@@ -4,8 +4,6 @@ This repository includes a script for preparing drone photo folders for PPK proc
 
 ## Script
 
-Use the following script in the `scripts` folder:
-
 ```text
 scripts/move_MS_drone_photos_for_PPK.py
 ```
@@ -20,18 +18,6 @@ This leaves the RGB `.jpg` photos in the main flight folder, which allows Emlid 
 
 Open `move_MS_drone_photos_for_PPK.py` and update the `ROOT_DIR` variable to the folder that contains your drone photo folders.
 
-For example, change:
-
-```python
-ROOT_DIR = r"D:\SfM\20260326_DCC_photos"
-```
-
-to the path containing your drone photos:
-
-```python
-ROOT_DIR = r"YOUR\PATH\TO\DRONE\PHOTOS"
-```
-
 Then run the script.
 
 ## Expected folder result
@@ -40,19 +26,21 @@ Before running:
 
 ```text
 Flight_Folder/
-├── IMG_0001.jpg
-├── IMG_0002.jpg
-├── IMG_0001.tif
-├── IMG_0002.tif
+├── Flight 1/
+    ├── IMG_0001.jpg
+    ├── IMG_0002.jpg
+    ├── IMG_0001.tif
+    ├── IMG_0002.tif
 ```
 
 After running:
 
 ```text
 Flight_Folder/
-├── IMG_0001.jpg
-├── IMG_0002.jpg
-└── MS/
-    ├── IMG_0001.tif
-    └── IMG_0002.tif
+├── Flight 1/
+    ├── IMG_0001.jpg
+    ├── IMG_0002.jpg
+    └── MS/
+        ├── IMG_0001.tif
+        └── IMG_0002.tif
 ```
