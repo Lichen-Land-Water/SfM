@@ -17,7 +17,7 @@ import shutil
 import sys
 
 
-ROOT_DIR = r"D:\SfM\20260326_DCC_photos"
+ROOT_DIR = r"C:\L\Lichen\Lichen - Documents\Projects\20240010_RoaringCr Des (CCD)\06_Photos\20261009 - Drone flight\drone"
 MODE = "move"   # change to "copy" if you want to keep originals
 
 
